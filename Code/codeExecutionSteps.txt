@@ -16,12 +16,12 @@ Stpes to run an Image Classifier on Docker Using Tensorflow:
 	$ cd $HOME
 	$ mkdir tf_files
 	$ cd tf_files
-	$ curl -O https://github.com/jubins/Machine-Learning-Project/tree/master/DataSets/food_photos
-	$ cd $HOME/tf_files/food_photos
+	$ curl -O https://github.com/jubins/Machine-Learning-Project/tree/master/DataSets
+	$ cd $HOME/tf_files/DataSets/food_photos
 	
 6. Link image dataset virtually to tensorflow:
-	$docker run -it -v $HOME/tf_files:/tf_files  gcr.io/tensorflow/tensorflow:latest-devel
-	# ls /tf_files/
+	$docker run -it -v $HOME/tf_files/DataSets/food_photos:/tf_files/DataSets/food_photos gcr.io/tensorflow/tensorflow:latest-devel
+	# ls /tf_files/DataSets
 	food_photos
 	
 7. Retrieving the Training code:
