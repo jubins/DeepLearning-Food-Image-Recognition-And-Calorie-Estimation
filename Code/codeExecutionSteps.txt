@@ -9,7 +9,7 @@ Stpes to run an Image Classifier on Docker Using Tensorflow:
 
 4. Check Tensorflow:
 	# python
-	import tensorflow
+	>> import tensorflow
 	
 5. Retrieve Images:
 	# ctrl-D if you're still in Docker and then:
