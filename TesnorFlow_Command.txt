@@ -1,0 +1,10 @@
+docker run -it -v $HOME/tf_project/:/tf_project/  gcr.io/tensorflow/tensorflow:latest-devel
+
+
+python tensorflow/examples/image_retraining/retrain.py \
+--bottleneck_dir=/tf_project/bottlenecks \
+--how_many_training_steps 500 \
+--model_dir=/tf_project/inception \
+--output_graph=/tf_project/retrained_graph.pb \
+--output_labels=/tf_project/retrained_labels.txt \
+--image_dir /tf_project/TrainingData
