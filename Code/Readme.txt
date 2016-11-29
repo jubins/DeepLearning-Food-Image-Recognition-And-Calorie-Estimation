@@ -51,4 +51,3 @@ Stpes to run an Image Classifier on Docker Using Tensorflow:
 	# python /tf_files/label_image.py /ImageDataSets/test_photos/VegBurger/notburger_cake1.jpg
 
 
-https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0

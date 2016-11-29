@@ -1,8 +1,8 @@
 '''
 #CS6293: Machine-Learning-Project
 #Team members:
-Harshit Pareek (hp1014)
-Jubin Soni (jas1464)
+Harshit Pareek (hp1014),
+Jubin Soni (jas1464),
 Ankur Patil (asp549)
 
 GitHubIDs:@jubins @hp1014 @ankpatil18
