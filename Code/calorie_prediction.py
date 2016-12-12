@@ -2,7 +2,7 @@
 '''
 train_model.py
 @author: jubinsoni
-Text analysis
+Text analysis and prediction, MultinomialNB, TfidfVectorization
 '''
 
 import numpy as np
