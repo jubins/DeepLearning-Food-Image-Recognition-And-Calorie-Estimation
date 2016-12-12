@@ -2,7 +2,7 @@
 '''
 train_model.py
 @author: jubinsoni
-Text analysis and prediction, MultinomialNB, TfidfVectorization
+Text analysis
 '''
 
 import numpy as np
@@ -32,10 +32,12 @@ def search(d, searchFor):
 
 
 def getActualValue(searchFor):
-    d = createDict(calorie_file='calorie_dataset.csv')
-    a = search(d,searchFor.lower())
-    return np.array([a.values[0][0]])
-
+    try:
+        d = createDict(calorie_file='calorie_dataset.csv')
+        a = search(d,searchFor.lower())
+        return np.array([a.values[0][0]])
+    except:
+        return 1
 
 def train_calorie_model(data_file):
     train = pd.read_csv(data_file)
@@ -61,7 +63,7 @@ def get_calorie(text):
 
 
 if __name__ == '__main__':
-    food = "Apple" #Pizza, Stawberry, Burger, Fries, Biriyani, Dosa, Egg, etc...
+    food = "Egg" #Pizza, Stawberry, Burger, Fries, Biriyani, Dosa, Egg, etc...
     d = createDict(calorie_file='calorie_dataset.csv')
     print food,"has %s calories." % get_calorie(food.lower())
     print "Accuracy Score: %f" % get_score_of_calorie(food.lower())
