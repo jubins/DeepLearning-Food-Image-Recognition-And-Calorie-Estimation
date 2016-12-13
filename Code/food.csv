@@ -1,0 +1,32 @@
+FoodName,Cuisine,CuisineNumber,FoodNumber,Price
+Afghan Kebab,African,20,18,6
+Meat Tofu,African,20,21,8
+Apple Pie,American,10,8,2.99
+Barbecue,American,10,6,4.49
+Burger,American,10,9,5
+Coffee,American,10,9.5,3.01
+Dessert,American,10,7,7.99
+Mc and Cheese,American,10,11,5.4
+Pancake,American,10,9.6,4.56
+Salad,American,10,8.4,7.45
+Sandwich,American,10,9.4,9.12
+Noodles,Chinese,30,32,7.14
+Smoothies,Chinese,30,7.64,6.55
+Sushi,Chinese,30,29.4,7
+Egg Omlet,Ethiopian,40,41.2,8
+Injera Wat,Ethiopian,40,44,14.2
+Apple,Fruit,70,68,1.99
+Biriyani,Indian,50,48,15.44
+Chat,Indian,50,51,9
+Dosa,Indian,50,52,14.5
+Tea,Indian,50,48.1,3
+Tikka,Indian,50,47.4,6
+Pasta,Italian,60,62,29.99
+Pizza,Italian,60,59.9,10.15
+Peking Duck,Mandarin,80,81,17.89
+Halal Meat,Mediterranean,100,99,6.87
+Beans,Mexican,90,86,6.33
+Burrito,Mexican,90,87,9
+Taco,Mexican,90,90.7,12.44
+Rice,Thai,110,111,2.49
+Fish soup,Vietnamese,120,119,8.99

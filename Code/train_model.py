@@ -4,6 +4,7 @@ train_model.py
 @author: jubinsoni
 Text analysis
 '''
+
 import numpy as np
 import pandas as pd
 from sklearn import metrics
@@ -14,6 +15,7 @@ import re, csv, sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+
 def createDict(calorie_file):
     calorie = pd.read_csv(calorie_file)
     d = {}
@@ -23,17 +25,17 @@ def createDict(calorie_file):
         i = i + 1
     return d
 
+
 def search(d, searchFor):
     df = pd.DataFrame({'food': d.keys(), 'calorie': d.values()})
     return df[df['food'].str.contains(searchFor)]
 
+
 def getActualValue(searchFor):
-    try:
-        d = createDict(calorie_file='calorie_dataset.csv')
-        a = search(d,searchFor.lower())
-        return np.array([a.values[0][0]])
-    except:
-        return 1
+    d = createDict(calorie_file='calorie_dataset.csv')
+    a = search(d,searchFor.lower())
+    return np.array([a.values[0][0]])
+
 
 def train_calorie_model(data_file):
     train = pd.read_csv(data_file)
@@ -42,6 +44,7 @@ def train_calorie_model(data_file):
     model = MultinomialNB().fit(X_train, np.array(train.Calories))
     return model, vectorizer
 
+
 def get_score_of_calorie(text):
     actual = getActualValue(text)
     predicted = float(get_calorie(text)[0])
@@ -49,14 +52,16 @@ def get_score_of_calorie(text):
     accuracy_score = predicted/actual
     return accuracy_score
 
+
 def get_calorie(text):
     data_file = 'calorie_dataset.csv'
     model, vectorizer = train_calorie_model(data_file)
     test = vectorizer.transform([text])
     return model.predict(test)
 
+
 if __name__ == '__main__':
-    food = "Rava" #Pizza, Stawberry, Burger, Fries, Biriyani, Dosa, Egg, etc...
+    food = "Apple" #Pizza, Stawberry, Burger, Fries, Biriyani, Dosa, Egg, etc...
     d = createDict(calorie_file='calorie_dataset.csv')
     print food,"has %s calories." % get_calorie(food.lower())
     print "Accuracy Score: %f" % get_score_of_calorie(food.lower())

@@ -1,3 +1,8 @@
+/*
+#Harshit Pareek (hp1014)
+#Ankur Patil (asp549)
+#Jubin Soni (jas1464)
+*/
 import tensorflow as tf, sys
 
 image_path = sys.argv[1]
