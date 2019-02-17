@@ -1,15 +1,12 @@
-'''
-#CS6293: Machine-Learning-Project
-#Team members:
-Harshit Pareek (hp1014),
-Jubin Soni (jas1464),
-Ankur Patil (asp549)
+# CS6293: Machine-Learning-Project
+# Team members:
+- Harshit Pareek (hp1014),
+- Jubin Soni (jas1464),
+A- nkur Patil (asp549)
 
 GitHubIDs:@jubins @hp1014 @ankpatil18
-'''
 
 Stpes to execute our code:
-
 1. Install Docker
 
 2. docker run hello-world
@@ -19,7 +16,6 @@ Stpes to execute our code:
 4. Check Tensorflow:
 	# python
 	>> import tensorflow
-	
 5. Retrieve Images:
 	# ctrl-D if you're still in Docker and then:
 	$ cd $HOME
