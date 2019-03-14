@@ -1,12 +1,17 @@
-# CS6293: Machine-Learning-Project
-# Team members:
-- Harshit Pareek (hp1014),
-- Jubin Soni (jas1464),
-- Ankur Patil (asp549)
+# NYU CS 6293: Machine-Learning-Project
 
-GitHubIDs:@jubins @hp1014 @ankpatil18
+### Prerequisites
+```
+Python 3.6
+TensorFlow 1.13
+OpnCV 3.4
+Numpy 1.12
+Pandas 0.22
+Docker (latest should work)
+Requests 2.1
+```
 
-Stpes to execute our code:
+### Stpes to execute our code:
 1. Install Docker
 
 2. docker run hello-world
@@ -55,5 +60,11 @@ Stpes to execute our code:
 	$ python /tf_files/ImageDataSets/label_image.py /ImageDataSets/test_photos/Pizza/pizza1.jpg
 	$ python /tf_files/label_image.py /ImageDataSets/test_photos/VegBurger/notburger_cake1.jpg
 
+
+## Team members:
+- Harshit Pareek (hp1014),
+- Jubin Soni (jas1464),
+- Ankur Patil (asp549)
+  GitHubIDs:@jubins @hp1014 @ankpatil18
 
 Please contact anyone of us if you face any difficulty in executing the code.
